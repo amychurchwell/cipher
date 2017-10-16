@@ -11,6 +11,12 @@ var lastChar = function(input) {
 };
 
 
-var upperC = firstChar(input) + lastChar(input);
+var firstLast = firstChar(input) + lastChar(input);
 
-alert(upperC.toUpperCase());
+alert(firstLast.toUpperCase());
+
+var blerg = function(firstLast) {
+  return firstLast.split("").reverse().join("");
+};
+
+alert(blerg);
