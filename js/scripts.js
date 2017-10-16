@@ -1,14 +1,16 @@
 var input = prompt('Type in a sentence:');
-console.log(input);
 
-var firstLast = function(input) {
-  return input.charAt(3);
+
+
+var firstChar = function(input) {
+  return input.charAt(0);
 };
 
-alert(firstLast(input));
+var lastChar = function(input) {
+  return input.charAt(input.length-1);
+};
 
-var capitalize = function(firstLast) {
-  return firstLast.toUpperCase();
-}
 
-alert(capitalize + something);
+var upperC = firstChar(input) + lastChar(input);
+
+alert(upperC.toUpperCase());
